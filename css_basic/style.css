@@ -24,4 +24,49 @@ aside {
   flex: 1;
   overflow-y: auto; /* Scrolls if content overflows */
 }
+/* General background and text styling */
+body {
+  background-color: #fdfdfd;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header and footer */
+header {
+  background-color: #002B5B;
+  color: white;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #002B5B;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Article content */
+article {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+}
+
+/* Aside content */
+aside {
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+/* Style links, if any */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
 
