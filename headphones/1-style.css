@@ -1,0 +1,158 @@
+/* Previous styles from 0-styles.css */
+
+/* Reset default browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ff6565;
+  --text-color: #ffffff;
+  --max-width: 1000px;
+  --font-main: 'Source Sans Pro', sans-serif;
+  --btn-opacity-hover: 0.9;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background-color: #000;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: transparent;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:active {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  background: url('assets/headphones_hero_1.jpg') no-repeat center/cover;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero-container p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: var(--btn-opacity-hover);
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    display: none;
+  }
+
+  .hero {
+    background: url('assets/headphones_hero_2.jpg') no-repeat center/cover;
+    padding: 80px 15px;
+  }
+
+  .hero-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-container p {
+    font-size: 1rem;
+  }
+}
+
+/* 👇 ADD BELOW: "What we do…" section styles */
+.what-we-do {
+  background-color: #ffffff;
+  color: #000;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.what-we-do h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.what-we-do .subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature i {
+  font-size: 50px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #666;
+}
